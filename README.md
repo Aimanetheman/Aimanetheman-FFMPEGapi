@@ -1,21 +1,16 @@
 # Video Generator API
 
-## Upload naar GitHub
-1. Maak nieuwe repository op GitHub
-2. Upload alle bestanden uit deze folder
-3. Commit changes
+Flask API that combines audio files and images into videos using FFmpeg.
 
-## Deploy naar Vercel
-1. Ga naar vercel.com
-2. Import je GitHub repository
-3. Deploy automatisch
+## Endpoints
 
-## API Endpoints
-- `POST /upload` - Upload files and generate video
-- `GET /status/{job_id}` - Check job status
-- `GET /download/{job_id}` - Download video
-- `GET /health` - Health check
+- POST /generate - Start video generation
+- GET /status/<job_id> - Check job status  
+- GET /download/<job_id> - Download completed video
+- GET /health - Health check
 
-## Test
-Na deployment test met: `https://your-app.vercel.app/health`
+## Deploy to Vercel
 
+1. Connect GitHub repository to Vercel
+2. Deploy automatically
+3. Use in n8n workflow
